@@ -1,0 +1,6 @@
+healthcheck-status:
+  handler: src/handler.healthCheckGET
+  events:
+    - http:
+        path: healthcheck
+        method: get
